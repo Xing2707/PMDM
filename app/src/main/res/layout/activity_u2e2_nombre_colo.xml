@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.u2e2NombreColo">
+
+    <TextView
+        android:id="@+id/u2e2twSalida1"
+        android:layout_width="408dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/u2e2sbR"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:max="200"
+        android:progress="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida1" />
+
+    <TextView
+        android:id="@+id/u2e2twR"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/u2e2twR"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/u2e2sbR"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida1" />
+
+    <Button
+        android:id="@+id/u2e2btCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/u2e2btCambio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/u2e2sh1"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/u2e2sh1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/u2e2btCambio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/u2e2sbG"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2sbR" />
+
+    <TextView
+        android:id="@+id/u2e2twG"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/u2e2twG"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/u2e2sbG"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
