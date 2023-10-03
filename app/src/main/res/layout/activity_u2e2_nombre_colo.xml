@@ -8,76 +8,79 @@
 
     <TextView
         android:id="@+id/u2e2twSalida1"
-        android:layout_width="408dp"
+        android:layout_width="410dp"
         android:layout_height="99dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
+        android:paddingTop="20dp"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/u2e2sbR"
-        android:layout_width="230dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="80dp"
-        android:max="200"
-        android:progress="40"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida1" />
-
-    <TextView
-        android:id="@+id/u2e2twR"
-        android:layout_width="26dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/u2e2twR"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/u2e2sbR"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida1" />
+        app:layout_constraintTop_toBottomOf="@+id/u2e2sbB" />
 
     <Button
         android:id="@+id/u2e2btCambio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/u2e2btCambio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2sh1"
+        app:layout_constraintVertical_bias="0.909" />
 
     <Switch
         android:id="@+id/u2e2sh1"
         android:layout_width="190dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"
         android:text="@string/u2e2sh1"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/u2e2btCambio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida1" />
 
     <SeekBar
         android:id="@+id/u2e2sbG"
         android:layout_width="230dp"
         android:layout_height="25dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="88dp"
+        android:max="250"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u2e2sbR" />
 
     <TextView
-        android:id="@+id/u2e2twG"
+        android:id="@+id/u2e2twB"
         android:layout_width="26dp"
         android:layout_height="29dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/u2e2twB"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/u2e2sbG"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twG3" />
+
+    <SeekBar
+        android:id="@+id/u2e2sbR"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:max="250"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida2" />
+
+    <TextView
+        android:id="@+id/u2e2twG3"
+        android:layout_width="26dp"
+        android:layout_height="30dp"
         android:layout_marginTop="24dp"
         android:text="@string/u2e2twG"
         android:textAlignment="center"
@@ -86,5 +89,51 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/u2e2twR" />
+
+    <SeekBar
+        android:id="@+id/u2e2sbB"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="88dp"
+        android:max="250"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2sbG" />
+
+    <TextView
+        android:id="@+id/u2e2twR"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/u2e2twR"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/u2e2sbR"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2twSalida2" />
+
+    <EditText
+        android:id="@+id/u2e2etEntrada1"
+        android:layout_width="410dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/u2e2et1"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u2e2twSalida2"
+        android:layout_width="80dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e2etEntrada1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
