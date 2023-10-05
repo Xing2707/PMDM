@@ -4,6 +4,23 @@
     <string name="u2e2twG">G</string>
     <string name="u2e2twB">B</string>
     <string name="u2e2et1">Escribe algo</string>
-    <string name="u2e2btCambio">Cambiar</string>
+    <string name="u2e2btCambio">Producir</string>
     <string name="u2e2sh1">Texto Blanco</string>
+    <string name="u2e3e4tw1">Propinatron</string>
+    <string name="u2e3e4bt1">1</string>
+    <string name="u2e3e4bt2">2</string>
+    <string name="u2e3e4bt3">3</string>
+    <string name="u2e3e4bt4">4</string>
+    <string name="u2e3e4bt5">5</string>
+    <string name="u2e3e4bt6">6</string>
+    <string name="u2e3e4bt7">7</string>
+    <string name="u2e3e4bt8">8</string>
+    <string name="u2e3e4bt9">9</string>
+    <string name="u2e3e4btR">&lt;</string>
+    <string name="u2e3e4bt0">0</string>
+    <string name="u2e3e4btC">C</string>
+    <string name="u2e3e4rbMalo">Malo</string>
+    <string name="u2e3e4rbBueno">Bueno</string>
+    <string name="u2e3e4rbExcelente">Excelente</string>
+    <string name="u2e3e4btCalcula">Calcula</string>
 </resources>

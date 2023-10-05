@@ -19,15 +19,17 @@ public class u2e2NombreColo extends AppCompatActivity {
     TextView twSalida1,twSalida2;
     SeekBar sbR,sbG,sbB;
 
+    SeekBar.OnSeekBarChangeListener manejador;
     EditText etEntrada;
     Switch shTextBlanco;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_u2e2_nombre_colo);
 
-        btCambio = findViewById(R.id.u2e2btCambio);
+        btCambio = findViewById(R.id.u2e2btProducir);
         twSalida1 = findViewById(R.id.u2e2twSalida1);
         twSalida2 = findViewById(R.id.u2e2twSalida2);
         etEntrada = findViewById(R.id.u2e2etEntrada1);
@@ -46,9 +48,23 @@ public class u2e2NombreColo extends AppCompatActivity {
             twSalida1.setText(etEntrada.getText());
         });
 
-        sbR.setOnSeekBarChangeListener(new sbListener());
-        sbG.setOnSeekBarChangeListener(new sbListener());
-        sbB.setOnSeekBarChangeListener(new sbListener());
+        manejador = new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                twSalida2.setBackgroundColor(Color.rgb(sbR.getProgress(),sbG.getProgress(),sbB.getProgress()));
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        };
+        sbR.setOnSeekBarChangeListener(manejador);
+        sbG.setOnSeekBarChangeListener(manejador);
+        sbB.setOnSeekBarChangeListener(manejador);
+
+        //sbR.setOnSeekBarChangeListener(new sbListener());
+        //sbG.setOnSeekBarChangeListener(new sbListener());
+        //sbB.setOnSeekBarChangeListener(new sbListener());
 
         shTextBlanco.setOnClickListener((View v) ->{
             if (shTextBlanco.isChecked()) {
@@ -63,8 +79,7 @@ public class u2e2NombreColo extends AppCompatActivity {
             twSalida2.setBackgroundColor(Color.rgb(sbR.getProgress(),sbG.getProgress(),sbB.getProgress()));
         }
         public void onStartTrackingTouch(SeekBar seekBar) {}
-
         public void onStopTrackingTouch(SeekBar seekBar) {}
-    }
+   }
 
 }
