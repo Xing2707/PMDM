@@ -2,6 +2,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +33,7 @@
         android:theme="@style/Theme.PMDM"
         tools:targetApi="31">
         <activity
-            android:name=".ut02.u2e3e4Propinatron"
+            android:name=".ut04.Ej1.ut4e1HolaMundoFragme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,9 +42,69 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut02.u2e2NombreColo"
+            android:name=".ut03.Ej8.u3e8ObjetoSerializableR"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej8.u3e8ObjetoSerializable"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ut03.Ej7.u3e7Pokemon"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej7.u3e7Personaje"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej7.u3e7Selector"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ut03.Ej9.u3e9IntentImplicito"
+            android:exported="true" />
+        <activity
+            android:name=".ut03.Ej5.u3e5AnalizaLetraResult"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej5.u3e5AnalizaLetra"
+            android:exported="true" />
+        <activity
+            android:name=".ut03.Ej4.u3e4FibonacciResult"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej4.u3e4Fibonacci"
+            android:exported="true" />
+        <activity
+            android:name=".ut03.Ej3.u3e3NombreUsuarioResultado"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej3.u3e3NombreUsuario"
+            android:exported="true" />
+        <activity
+            android:name=".ut03.Ej2.u3e2PedirHeladoResult"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej2.u3e2PedirHelado"
+            android:exported="true" />
+        <activity
+            android:name=".ut03.Ej1.u3e1ResultadoCalculador"
+            android:exported="false" />
+        <activity
+            android:name=".ut03.Ej1.u3e1Calculador"
+            android:exported="true" />
+        <activity
+            android:name=".ut02.ut2e5PiedraPapeTigera"
+            android:exported="true" />
+        <activity
+            android:name=".ut02.u2e5PediCitaCitaCorrecto"
+            android:exported="true" />
+        <activity
+            android:name=".ut02.u2e5PediCita"
+            android:exported="true" />
+        <activity
+            android:name=".ut02.u2e3e4Propinatron"
+            android:exported="true" />
+        <activity
+            android:name=".ut02.u2e2NombreColo"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.Ej3.u3e3NombreUsuarioResultado">
+
+    <EditText
+        android:id="@+id/u3e3nuretNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/u3e3nurbtAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/u3e3nuretNombre"
+        app:layout_constraintStart_toStartOf="@+id/u3e3nuretNombre"
+        app:layout_constraintTop_toBottomOf="@+id/u3e3nuretNombre" />
+
+    <Button
+        android:id="@+id/u3e3nurbtCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#ED0202"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="@+id/u3e3nurbtAceptar"
+        app:layout_constraintStart_toStartOf="@+id/u3e3nurbtAceptar"
+        app:layout_constraintTop_toBottomOf="@+id/u3e3nurbtAceptar" />
+
+    <Button
+        android:id="@+id/u3e3nurbtLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/limpiar"
+        app:layout_constraintEnd_toEndOf="@+id/u3e3nurbtCancelar"
+        app:layout_constraintStart_toStartOf="@+id/u3e3nurbtCancelar"
+        app:layout_constraintTop_toBottomOf="@+id/u3e3nurbtCancelar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

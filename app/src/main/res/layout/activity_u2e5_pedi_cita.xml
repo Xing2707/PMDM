@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.u2e5PediCita">
+
+    <TextView
+        android:id="@+id/u2e5twPerfilSalida"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/u2e5etEntradaDNI"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/u2e3e5twDNIHint"
+        android:inputType="text"
+        android:paddingLeft="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5twPerfilSalida" />
+
+    <TextView
+        android:id="@+id/u2e5twSalidaDNI"
+        android:layout_width="45dp"
+        android:layout_height="37dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/u2e3e5twDNI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/u2e5etEntradaDNI"
+        app:layout_constraintStart_toStartOf="@+id/u2e5etEntradaDNI"
+        app:layout_constraintTop_toTopOf="@+id/u2e5etEntradaDNI"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/u2e5etEntradaDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/u2e3e5etDateHint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/u2e5btPediCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5etEntradaDNI"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/u2e5etEntradaTime"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/u2e3e5etTime"
+        android:inputType="text"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/u2e5btPediCita"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toEndOf="@+id/u2e5etEntradaDate"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5etEntradaDNI"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/u2e5btPediCita"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="#03A9F4"
+        android:padding="5dp"
+        android:text="@string/u2e5btPediCita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/u2e5twTitle"
+        android:layout_width="387dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="@string/u2e5twTitulo"
+        android:textAlignment="center"
+        android:textColor="#E43B08"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/u2e5twPerfilSalida"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/u2e5twPerfilSalida"
+        app:layout_constraintTop_toTopOf="@+id/u2e5twPerfilSalida" />
+
+    <TextView
+        android:id="@+id/u2e5twSchedule"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/u2e5twHorario"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/u2e5imgFiveStar"
+        app:layout_constraintStart_toStartOf="@+id/u2e5twPerfilSalida"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5twTitle" />
+
+    <TextView
+        android:id="@+id/u2e5twTextHorario"
+        android:layout_width="98dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/u2e5twTextHorario"
+        app:layout_constraintEnd_toStartOf="@+id/u2e5imgFiveStar"
+        app:layout_constraintStart_toStartOf="@+id/u2e5twPerfilSalida"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5twSchedule" />
+
+    <ImageView
+        android:id="@+id/u2e5imgFiveStar"
+        android:layout_width="157dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/u2e5twPerfilSalida"
+        app:layout_constraintTop_toBottomOf="@+id/u2e5twTitle"
+        app:srcCompat="@mipmap/estrella" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

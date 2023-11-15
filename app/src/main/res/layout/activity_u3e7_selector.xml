@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut03.Ej7.u3e7Selector">
+
+    <TextView
+        android:id="@+id/u3e7tvp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:padding="3dp"
+        android:text="@string/p1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u3e7tvp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="3dp"
+        android:text="@string/p2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/u3e7btselectplayer1"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/SelectPersonaje"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/u3e7tvp1"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/u3e7tvp1"
+        app:layout_constraintTop_toBottomOf="@+id/u3e7tvp1"
+        app:srcCompat="@mipmap/anonimo" />
+
+    <ImageButton
+        android:id="@+id/u3e7btselectplayer2"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/SelectPersonaje"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/u3e7tvp2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/u3e7tvp2"
+        app:layout_constraintTop_toBottomOf="@+id/u3e7tvp2"
+        app:srcCompat="@mipmap/anonimo" />
+
+    <ImageButton
+        android:id="@+id/u3e7btSelectpokemon1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/SelectPokemon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/u3e7btselectplayer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3e7btselectplayer1"
+        app:layout_constraintTop_toBottomOf="@+id/u3e7btselectplayer1"
+        app:srcCompat="@mipmap/ball" />
+
+    <ImageButton
+        android:id="@+id/u3e7btSelectpokemon2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/SelectPokemon"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/u3e7btselectplayer2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/u3e7btselectplayer2"
+        app:layout_constraintTop_toBottomOf="@+id/u3e7btselectplayer2"
+        app:srcCompat="@mipmap/ball" />
+
+    <Button
+        android:id="@+id/u3e7btLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

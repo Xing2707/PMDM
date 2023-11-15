@@ -23,4 +23,73 @@
     <string name="u2e3e4rbBueno">Bueno</string>
     <string name="u2e3e4rbExcelente">Excelente</string>
     <string name="u2e3e4btCalcula">Calcula</string>
+    <string name="u2e5twTitulo">Hotel Cinco Estrella</string>
+    <string name="u2e5twHorario">Horario</string>
+    <string name="u2e5twTextHorario">Todo los dias: \n\n 09:05 - 00:00</string>
+    <string name="u2e3e5twDNI">DNI: </string>
+    <string name="u2e3e5twDNIHint">Introduce el numero de DNI </string>
+    <string name="u2e3e5etDateHint">Elige una fecha</string>
+    <string name="u2e3e5etTime">Elige una hora</string>
+    <string name="u2e5btPediCita">Pedir Cita</string>
+    <string name="u2e5twPediCitaCorrecto">CITA PEDIDO HA SIDO CORRECTAMENTE!</string>
+    <string name="u2e5btVolver">VOLVER</string>
+    <string name="u2e5juegotwSalida">Jugador</string>
+    <string name="u2e5juegotwSalida2">Maquina</string>
+    <string name="u2e5juegotwPuntuacion">Puntos: </string>
+    <string name="u2e5juegobtPiedra">Piedra</string>
+    <string name="u2e5juegobtPapel">Papel</string>
+    <string name="u2e5juegobtTijera">Tijera</string>
+    <string name="u2e5juegobtReset">Resetear</string>
+    <string name="u3e1etNum">Numero</string>
+    <string name="OperadoMas">+</string>
+    <string name="OperadoMenos">-</string>
+    <string name="OperadoMultiplicar">*</string>
+    <string name="OPeradoDividi">/</string>
+    <string name="DivorceCantBeZero">Divosor No Puede Ser 0!</string>
+    <string name="EntherSometing">Introduce Algo!</string>
+    <string name="ChosserSometing">Elige Algo!</string>
+    <string name="u3e2btgenerate">General</string>
+    <string name="vainilla">Vainilla</string>
+    <string name="fresa">Fresa</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="CirculoSim">&#927;</string>
+    <string name="CucuSim">\\ /</string>
+    <string name="tarrinaSim">U</string>
+    <string name="tipo">Tipo</string>
+    <string name="N">N</string>
+    <string name="eligeHelado">Elige un tipo de helado</string>
+    <string name="anonimo">Anonimo</string>
+    <string-array name="tipoHelado">
+        <item>Cucurucho</item>
+        <item>Cucu.Choco</item>
+        <item>Tarrina</item>
+    </string-array>
+    <string name="pedirNombre">Pedir Nombre</string>
+    <string name="nombre">Nombre</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="siguinte">Siguiente</string>
+    <string name="Num1">N1</string>
+    <string name="Num2">N2</string>
+    <string name="Suma">Suma</string>
+    <string name="Analizar">Analizar</string>
+    <string name="IntAlgo">Introduce algo</string>
+    <string name="Finaliza">Finalizar</string>
+    <string name="Sorpresa">Sorpresa</string>
+    <string name="SelectPersonaje">Selecciona \n Personaje</string>
+    <string name="SelectPokemon">Selecciona \n pokemon</string>
+    <string name="NumMiembros">Numero de Miembros</string>
+    <string name="SelectColor">Seleccionar Color</string>
+    <string name="RGB">R\nG\nB</string>
+    <string name="enviar">enviar</string>
+    <string name="p1">P1</string>
+    <string name="p2">p2</string>
+    <string name="Squirtle">Squirtle</string>
+    <string name="Bulbasaur">Bulbasaur</string>
+    <string name="Charmander">Charmander</string>
+    <string name="Pikachu">Pikachu</string>
+    <string name="personaje">Personaje</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
