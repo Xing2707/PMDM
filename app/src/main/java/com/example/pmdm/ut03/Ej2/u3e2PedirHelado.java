@@ -52,7 +52,7 @@ public class u3e2PedirHelado extends AppCompatActivity {
        adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, item);
        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
        u3e2Spinner.setAdapter(adapter);
-       u3e2Spinner.setSelection(INTZERO,false);
+       u3e2Spinner.setSelection(0,false);
 
        u3e2phbtGenera.setOnClickListener((view) ->{
            if(view.getId() == R.id.u3e2phbtGenera){

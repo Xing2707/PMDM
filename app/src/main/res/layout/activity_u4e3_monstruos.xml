@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut04.Ej3.u4e3_Monstruos">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4e3FragmeV1"
+        android:name="com.example.pmdm.ut04.Ej3.u4e3_Monstruo_Fragme1"
+        android:layout_width="391dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/u4e3tvSelecColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/SelectColor"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3etMiembro"
+        app:layout_constraintStart_toStartOf="@+id/u4e3etMiembro"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3etMiembro" />
+
+    <SeekBar
+        android:id="@+id/u4e3SeekBarG"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:max="250"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3SeekBarR"
+        app:layout_constraintStart_toStartOf="@+id/u4e3SeekBarR"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3SeekBarR" />
+
+    <TextView
+        android:id="@+id/u4e3tvColor"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3SeekBarB"
+        app:layout_constraintStart_toStartOf="@+id/u4e3SeekBarB"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3SeekBarB" />
+
+    <EditText
+        android:id="@+id/u4e3tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3FragmeV2"
+        app:layout_constraintStart_toStartOf="@+id/u4e3FragmeV2"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3FragmeV2" />
+
+    <SeekBar
+        android:id="@+id/u4e3SeekBarR"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:max="250"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3tvSelecColor"
+        app:layout_constraintStart_toStartOf="@+id/u4e3tvSelecColor"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3tvSelecColor" />
+
+    <SeekBar
+        android:id="@+id/u4e3SeekBarB"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:max="250"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3SeekBarG"
+        app:layout_constraintStart_toStartOf="@+id/u4e3SeekBarG"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3SeekBarG" />
+
+    <TextView
+        android:id="@+id/u4e3tvRGB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="@string/RGB"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/u4e3SeekBarB"
+        app:layout_constraintEnd_toStartOf="@+id/u4e3SeekBarG"
+        app:layout_constraintTop_toTopOf="@+id/u4e3SeekBarR" />
+
+    <Button
+        android:id="@+id/u4e3btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/u4e3etMiembro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/NumMiembros"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/u4e3tvNombre"
+        app:layout_constraintStart_toStartOf="@+id/u4e3tvNombre"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3tvNombre" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4e3FragmeV2"
+        android:name="com.example.pmdm.ut04.Ej3.u4e3_Monstruo_Fragme1"
+        android:layout_width="391dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u4e3FragmeV1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

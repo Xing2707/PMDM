@@ -92,4 +92,9 @@
     <string name="personaje">Personaje</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Contar">Contar</string>
+    <string name="Cont_Fumar">Contador de veces que fumas</string>
+    <string name="Cont_Beber">Contador de veces que bebes</string>
+    <string name="Cont_Insulto">Contador de veces que Insultas</string>
+    <string name="jugar">jugar</string>
 </resources>

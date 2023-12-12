@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <queries>
         <intent>
             <action android:name="android.intent.action.DIAL" />
         </intent>
         <intent>
             <action android:name="android.intent.action.SENDTO" />
-
             <data android:mimeType="*/*" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
-
             <category android:name="android.intent.category.BROWSABLE" />
-
             <data android:scheme="https" />
         </intent>
     </queries>
@@ -32,7 +30,7 @@
         android:theme="@style/Theme.PMDM"
         tools:targetApi="31">
         <activity
-            android:name=".ut04.Ej1.ut4e1HolaMundoFragme"
+            android:name=".ut04.Ej4.u4e4Pinpon"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,12 +39,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ut04.Ej3.u4e3_Monstruos"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ut04.Ej2.u4e2Contador"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ut04.Ej1.ut4e1HolaMundoFragme"
+            android:exported="true" />
+        <activity
             android:name=".ut03.Ej8.u3e8ObjetoSerializableR"
             android:exported="false" />
         <activity
             android:name=".ut03.Ej8.u3e8ObjetoSerializable"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ut03.Ej7.u3e7Pokemon"
             android:exported="false" />
@@ -55,7 +68,7 @@
             android:exported="false" />
         <activity
             android:name=".ut03.Ej7.u3e7Selector"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ut03.Ej9.u3e9IntentImplicito"
             android:exported="true" />
@@ -88,9 +101,10 @@
             android:exported="false" />
         <activity
             android:name=".ut03.Ej1.u3e1Calculador"
-            android:exported="true" />
+            android:exported="true" /> <!-- android:configChanges="keyboardHidden|orientation|screenSize" sirve para obtener datos al girar pantalla -->
         <activity
             android:name=".ut02.ut2e5PiedraPapeTigera"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true" />
         <activity
             android:name=".ut02.u2e5PediCitaCitaCorrecto"

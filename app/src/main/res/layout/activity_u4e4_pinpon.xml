@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut04.Ej4.u4e4Pinpon">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4e4Fragmev2"
+        android:name="com.example.pmdm.ut04.Ej4.u4e4ContadorPinpon"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/u4e4PinpontvPalo"
+        app:layout_constraintStart_toEndOf="@+id/u4e4PinpontvPalo"
+        app:layout_constraintTop_toTopOf="@+id/u4e4PinpontvPalo" />
+
+    <TextView
+        android:id="@+id/u4e4PinpontvPalo"
+        android:layout_width="5dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/u4e4Fragmev1"
+        app:layout_constraintStart_toEndOf="@+id/u4e4Fragmev1"
+        app:layout_constraintTop_toTopOf="@+id/u4e4Fragmev1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/u4e4Fragmev1"
+        android:name="com.example.pmdm.ut04.Ej4.u4e4ContadorPinpon"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/u4e4PinponbtJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/jugar"
+        app:layout_constraintEnd_toEndOf="@+id/u4e4Fragmev2"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/u4e4Fragmev1"
+        app:layout_constraintTop_toBottomOf="@+id/u4e4PinpontvPalo" />
+
+    <TextView
+        android:id="@+id/quees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

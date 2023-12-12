@@ -70,6 +70,7 @@ public class u3e7Selector extends AppCompatActivity {
         u3e7btselectplayer2.setOnClickListener(manejadorPersonaje);
         u3e7btSelectpokemon1.setOnClickListener(manejadorPokemon);
         u3e7btSelectpokemon2.setOnClickListener(manejadorPokemon);
+        u3e7btLimpiar.setOnClickListener(view ->{clear();});
 
         launcherPer = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),result -> {
             intent = result.getData();
@@ -81,7 +82,7 @@ public class u3e7Selector extends AppCompatActivity {
                     u3e7btselectplayer1.setTag(select);
                 }else if(id == u3e7btselectplayer2.getId()) {
                     u3e7btselectplayer2.setImageResource(select);
-                    u3e7btselectplayer1.setTag(select);
+                    u3e7btselectplayer2.setTag(select);
                 }
             } else if (result.getResultCode() == Activity.RESULT_CANCELED) {
                 Adialog("Worning","El usuario se ha cancelado el operacion.");
@@ -123,5 +124,15 @@ public class u3e7Selector extends AppCompatActivity {
         builder.setCancelable(true);
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    private void clear(){
+            u3e7btselectplayer1.setTag(null);
+            u3e7btselectplayer2.setTag(null);
+            u3e7btselectplayer1.setImageResource(EnumPlayer.anonimo.getReference());
+            u3e7btselectplayer2.setImageResource(EnumPlayer.anonimo.getReference());
+            u3e7btSelectpokemon1.setImageResource(EnumPokemon.ball.getReference());
+            u3e7btSelectpokemon2.setImageResource(EnumPokemon.ball.getReference());
+
     }
 }
