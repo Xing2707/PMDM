@@ -8,11 +8,14 @@
         </intent>
         <intent>
             <action android:name="android.intent.action.SENDTO" />
+
             <data android:mimeType="*/*" />
         </intent>
         <intent>
             <action android:name="android.intent.action.VIEW" />
+
             <category android:name="android.intent.category.BROWSABLE" />
+
             <data android:scheme="https" />
         </intent>
     </queries>
@@ -30,7 +33,7 @@
         android:theme="@style/Theme.PMDM"
         tools:targetApi="31">
         <activity
-            android:name=".ut04.Ej4.u4e4Pinpon"
+            android:name=".ut06.Navidad.dulceNavidad"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,9 +42,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut04.Ej3.u4e3_Monstruos"
+            android:name=".ut06.Ejemplo.Lista"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ut04.Ej4.u4e4Pinpon"
+            android:exported="true" />
+        <activity
+            android:name=".ut04.Ej3.u4e3_Monstruos"
+            android:exported="true" />
         <activity
             android:name=".ut04.Ej2.u4e2Contador"
             android:exported="true">
